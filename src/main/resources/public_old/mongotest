@@ -1,0 +1,2 @@
+db.users.insertOne({"name":"Art","email":"d.art.shishkin@gmail.com","age":36,"
+hasCar":true,"favColors":["Red","Green","Blue"],"child":

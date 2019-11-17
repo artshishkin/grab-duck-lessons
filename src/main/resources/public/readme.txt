@@ -1,1 +1,2 @@
-I am sitting in public
+I am sitting in static
+After commit
