@@ -4,7 +4,12 @@ app.controller("AppCtrl", function ($scope, $http) {
     $scope.websites = [];
 
 
-    $http.get('http://localhost:8090/api/stackoverflow').then(function (response) {
+    // $http.get('http://localhost:8090/api/stackoverflow').then(function (response) {
+    //     $scope.websites = response.data;
+    //     console.log(response.data);
+    //
+    // });
+    $http.get('/api/stackoverflow').then(function (response) {
         $scope.websites = response.data;
         console.log(response.data);
 
