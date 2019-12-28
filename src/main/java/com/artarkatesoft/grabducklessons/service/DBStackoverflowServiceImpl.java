@@ -1,7 +1,7 @@
 package com.artarkatesoft.grabducklessons.service;
 
 import com.artarkatesoft.grabducklessons.model.StackoverflowWebsite;
-import com.artarkatesoft.grabducklessons.persistence.MongoStackoverflowWebsiteRepository;
+import com.artarkatesoft.grabducklessons.persistence.PostgresStackoverflowWebsiteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,8 +16,8 @@ public class DBStackoverflowServiceImpl implements StackoverflowService {
 
 
     @Autowired
-        private MongoStackoverflowWebsiteRepository stackoverflowWebsiteRepository;
-//    private PostgresStackoverflowWebsiteRepository stackoverflowWebsiteRepository;
+//        private MongoStackoverflowWebsiteRepository stackoverflowWebsiteRepository;
+    private PostgresStackoverflowWebsiteRepository stackoverflowWebsiteRepository;
 
     @Override
     public List<StackoverflowWebsite> findAll() {
