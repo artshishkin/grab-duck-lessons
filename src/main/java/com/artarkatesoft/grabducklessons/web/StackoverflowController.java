@@ -22,7 +22,6 @@ public class StackoverflowController {
     @RequestMapping
     public List<StackoverflowWebsite> getListOfProviders(){
 
-
         return stackoverflowService.findAll();
     }
 }
